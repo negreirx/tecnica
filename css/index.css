@@ -1,0 +1,22 @@
+@import './global.css';
+@import './headerHome.css';
+@import './home.css';
+@import './sectionServices.css';
+@import './sectionTabelas.css';
+@import './sectionBeneficios.css';
+@import './sectionMarcas.css';
+@import './sectionHistoria.css';
+@import './sectionComece.css';
+@import './sectionPlanos.css?v=2';
+@import './sectionRobos.css?v=2';
+@import './sectionSobre.css';
+@import './footer.css';
+@import './author.css';
+
+@import './navigation.css';
+@import './modalForm.css';
+@import './modalRobo.css';
+
+@import './button.css';
+@import './head.css';
+

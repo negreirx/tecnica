@@ -1,0 +1,56 @@
+#historia {
+    overflow: hidden;
+    position: relative;
+    background: var(--bg-green);
+}
+
+#historia a button {
+    margin-top: 4rem;
+}
+
+#historia header p {
+    margin-top: 1rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+#historia header p span {
+    font-weight: 700;
+}
+
+#historia .image img {
+    margin-bottom: 2rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+@media (min-width: 1080px) {
+    section#historia header {
+        text-align: left;
+        align-items: start;
+        margin-bottom: 3rem;
+        grid-area: b;
+    }
+
+    section#historia .image img {
+        margin-bottom: 0;
+    }
+
+    section#historia .wrapper .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "a b";
+        align-items: center;
+        gap: 7rem;
+    }
+
+    section#historia a button {
+        margin-top: 3rem;
+    }
+
+    section#historia header p {
+        font-size: 1.8rem;
+        line-height: 1.6;
+    }
+}

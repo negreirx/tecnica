@@ -1,0 +1,57 @@
+#marcas {
+    overflow: hidden;
+    position: relative;
+    background: var(--bg-green);
+}
+
+#marcas a button {
+    margin-top: 4rem;
+}
+
+#marcas header p {
+    margin-top: 1rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+#marcas header p span {
+    font-weight: 700;
+}
+
+#marcas .image img {
+    margin-bottom: 2rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+    border: 4px solid var(--bg-blue);
+}
+
+@media (min-width: 1080px) {
+    section#marcas header {
+        text-align: left;
+        align-items: start;
+        margin-bottom: 3rem;
+        grid-area: a;
+    }
+
+    section#marcas .image img {
+        margin-bottom: 0;
+    }
+
+    section#marcas .wrapper .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "a b";
+        align-items: center;
+        gap: 7rem;
+    }
+
+    section#marcas a button {
+        margin-top: 3rem;
+    }
+
+    section#marcas header p {
+        font-size: 1.8rem;
+        line-height: 1.6;
+    }
+}

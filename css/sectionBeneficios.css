@@ -1,0 +1,173 @@
+#beneficios {
+    background: var(--bg-green);
+    position: relative;
+}
+
+#beneficios header {
+    margin-bottom: 4rem;
+}
+
+#beneficios .cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#beneficios .cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: start;
+
+  position: relative;
+  background: #fff;
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 15rem;
+
+  border-top: 1px solid #403F6F;
+  padding-block: 4rem;
+  min-height: 24rem;
+  max-height: 24rem;
+}
+
+#beneficios .cards .card span {
+background: var(--gradient);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+  font-size: 7rem;
+  opacity: .4;
+  font-weight: 300;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 1), transparent 100%);
+}
+
+#beneficios .cards .card h3 {
+  font-size: 3rem;
+  color: var(--bg-blue);
+
+  margin-top: -4.5rem;
+}
+
+#beneficios .cards .card p {
+  color: #585858;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 1.5rem;
+}
+
+#beneficios .cards .card ion-icon {
+    font-size: 2rem;
+    color: #403F6F;
+    margin-top: 2rem;
+
+    transform: rotate(90deg);
+}
+
+#beneficios h2.h2 {
+  margin-top: 4rem;
+  font-size: 2rem;
+
+}
+
+#beneficios a button {
+  margin-top: 4rem;
+}
+
+@media (min-width: 1080px) {
+    section#beneficios header {
+        margin-bottom: 6rem;
+    }
+
+    section#beneficios .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+    }
+
+    section#beneficios .cards .card {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      padding-block: 3rem;
+      padding-inline: 2rem;
+      top: initial;
+      border-top: 2px solid #403F6F;
+
+
+      min-height: initial;
+      max-height: initial;
+
+      /* position: -webkit-sticky;
+    position: sticky;
+        top: 15rem; */
+    }
+
+    section#beneficios .cards .card:hover span,
+    section#beneficios .cards .card:hover h3 {
+      transform: translateX(20px);
+      opacity: .5;
+    }
+
+
+    section#beneficios .cards .card span {
+      font-size: 6rem;
+      opacity: .3;
+      transition: all 700ms ease-in-out;
+      color: #fff;
+      mask-image: initial;
+    }
+
+    section#beneficios .cards .card h3 {
+      transition: all 700ms ease-in-out;
+      font-size: 2.3rem;
+      margin-top: -3rem;
+      z-index: 1;
+    }
+
+    section#beneficios .cards .card p {
+      position: relative;
+      margin-top: 1.4rem;
+      font-size: 1.6rem;
+    }
+
+    section#beneficios .cards .card p::before {
+      content: '';
+      position: absolute;
+      height: 15rem;
+      width: 3px;
+      background: var(--primary-color);
+      left: -2rem;
+      bottom: 100%;
+      border-radius: 2rem;
+      opacity: 0;
+      transition: all 700ms ease-in-out;
+    }
+
+    section#beneficios .cards .card:hover p::before {
+      bottom: 50%;
+      opacity: 1;
+    }
+
+    section#beneficios .cards .card ion-icon {
+        transform: rotate(0);
+
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        font-size: 2.5rem;
+    }
+
+    section#beneficios a.desktop {
+        display: initial;
+    }
+
+    section#beneficios h2.h2 {
+      margin-top: 5rem;
+  }
+
+    section#beneficios a button {
+        margin-top: 2rem;
+    }
+   
+  }
